@@ -1,21 +1,92 @@
 .card{
-    padding: 2em;
+    padding: 0em 2em;
     margin: 1em 1em;
     color:white;
     box-shadow: 1px 1.5px 10px black;
     width: 18rem;
-    background-color: #1F487E;
+    background-color: black;
+    background-image: url('https://i.pinimg.com/originals/1e/58/b0/1e58b0d94b1d2a13d0fb0b6d4bd64d56.png');
+    border-radius: 1em 3em;
 }
 
-.card-img-top{
+
+.card:hover{
+    box-shadow: 1px 1.5px 20px #b10900;
+    bottom: .3em;
+}
+
+.imagen{
     object-fit: cover;
-    height: 10rem;
-    box-shadow: 1px 1.5px 5px black;
-    border-radius: 0em 4em 0em 4em;
+    height: 25rem;
+    box-shadow: 1px 1.5px 10px black;
+    border-radius: 1em 3em;
+    margin-top: 1em;
 }
 
-.btn{
+.card-title{
+   position: absolute; 
+   padding: .7em;
+   margin: 0;
+   font-family: 'Russo One', sans-serif;
+   color: #db0000;
+   text-transform: uppercase;
+   font-size: 1.6em;
+   text-shadow: 1px 1px 8px #860909;
+   animation-name: animacion-luz;
+   animation-duration: 1.5s;
+   animation-timing-function:steps();
+   animation-iteration-count: infinite;  
+}
+
+@keyframes animacion-luz {
+    0% {
+        text-shadow: 1px 1px 5px #860909;
+      }
+      
+      100% {
+        text-shadow: 1px 1px 5px #e71717; 
+      }
+}
+
+.botones{
+    padding: 1em;
+}
+
+
+.buton{
     margin: 0em 1em;
-    font-weight: 600;
-    border-radius: 2em;
+    background-color: #db0000;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    border: 0px;
+    padding: .2em;
+    border-radius: 0em 0em .3em .3em;
+    font-weight: bolder;
+}
+
+.buton:hover{
+    box-shadow: 1px 3px 5px #e71717b2;
+    background-color: #aa0000;
+    color: #ff0000;
+    
+
+}
+
+
+
+.card-body{
+    text-align: left;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;   
+     
+}
+
+.texto{
+    text-shadow: 1px 1px 5px #e71717b2;
+    color: #f80707;
+}
+
+
+.card-text{
+    margin: 0;
 }

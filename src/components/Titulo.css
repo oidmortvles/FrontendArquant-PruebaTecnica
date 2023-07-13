@@ -1,0 +1,22 @@
+h1{
+   padding-top: 0em; 
+   padding-bottom: 0;
+   margin: 0;
+   font-family: 'Russo One', sans-serif;
+   color: #db0000;
+   text-transform: uppercase;
+   font-size: 2em;
+   text-shadow: 1px 1px 15px #b81616;
+
+}
+
+h2{
+   padding-top: 0;
+   margin: 0;
+   margin-bottom: .5em;
+   font-family: 'Russo One', sans-serif;
+   color: #d7db00;
+   text-transform: uppercase;
+   font-size: 2em;
+   text-shadow: 1px 1px 20px #ebee41bd;
+}

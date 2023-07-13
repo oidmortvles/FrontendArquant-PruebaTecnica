@@ -1,0 +1,136 @@
+.titulo{
+    
+    color: #d7db00;
+    position: relative;
+    bottom: 500px;
+    z-index: 500;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 1px 1px 10px #ebee41bd;
+}
+
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+
+.sable{
+    width: 30em;
+    z-index: 100;
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.rectangulo {   
+        z-index: 0;
+        width: 8em;
+        height:2em;
+        position: relative;
+        left: -7em;        
+        margin-top: 65%;
+        background: linear-gradient(to right, #dd3130, #db0000);
+        animation-name: animacion-rectangulo;
+        animation-duration: 1.7s;
+        animation-timing-function:linear;
+        animation-iteration-count: infinite;
+        transform-origin: left;
+        border-radius: 2em 2em 2em 0em;
+        box-shadow: 2px 2px 15px #e91818;
+    
+  }
+
+
+@keyframes animacion-rectangulo {
+    0% {
+        transform: scaleX(1);
+      }
+      50% {
+        transform: scaleX(3);
+      }
+      100% {
+        transform: scaleX(7);
+      }
+  }
+
+
+  @keyframes animacion-giro {
+    0% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(3);
+      }
+      100% {
+        transform: scaleY(5);
+      }
+  }
+
+
+  
+/* responsive  */
+@media only screen and (max-width: 768px) {
+
+    .titulo{
+    
+        
+        position: relative;
+        bottom: 15em;
+        z-index: 500;
+        flex-direction: column; 
+        align-items: flex-start;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .contenedor {
+        flex-direction: column; 
+        align-items: center; 
+    }
+  
+    .sable{
+        transform: rotate(90deg);
+        width: 30em;
+        z-index: 300;
+        position: relative;
+        top:1em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .rectangulo{
+        transform: rotate(90deg);
+        z-index: 100;
+        width: 2em;
+        height:9em;
+        background: linear-gradient( #e71717b2, #db0000);
+        animation-name: animacion-giro;
+        animation-timing-function:linear;
+        animation-iteration-count: infinite;
+        transform-origin: top;
+        display: flex;
+        align-content: center;
+        position: relative;
+        left: 50%;
+        top:40%; 
+        margin: 0;       
+        border-radius: 2em;
+        box-shadow: 2px 2px 15px #e91818;
+    }
+
+  
+  }
+  

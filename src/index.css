@@ -27,10 +27,10 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(https://cdn.worldvectorlogo.com/logos/star-wars-4.svg) !important;
-  background-repeat: space;
-  background-color: #000000e0 !important;
-  background-blend-mode:normal;
+  background-image: url(https://cdn.wallpapersafari.com/1/97/co341S.jpg);
+  background-repeat: round;
+  background-color: #000000e0;
+  background-blend-mode:multiply;
   
 }
 
